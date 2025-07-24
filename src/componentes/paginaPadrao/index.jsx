@@ -1,12 +1,12 @@
 import { Outlet } from "react-router";
 import Banner from "../banner";
-import styles from "./paginaPadrao.module.css";
 
-export default function PaginaPadrao() {
+export default function PaginaPadrao({children}) {
   return (
     <main>
       <Banner/>
       <Outlet/>
+      {children}
     </main>
   )
 }
